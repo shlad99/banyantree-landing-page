@@ -70,7 +70,20 @@
             margin: 0 auto;
         }
 
-        .gallery-container {
+        /* Upcoming Products Section */
+        section.products {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section.products h2 {
+            font-size: 2.5rem;
+            font-family: 'Teko', sans-serif;
+            margin-bottom: 20px;
+            color: #1f4037;
+        }
+
+        .product-gallery {
             display: flex;
             justify-content: space-between;
             padding: 40px 10px;
@@ -78,13 +91,53 @@
             max-width: 1200px;
         }
 
-        .gallery-container img {
+        .product {
+            text-align: center;
             width: 18%;
+        }
+
+        .product img {
+            width: 100%;
             height: 250px;
             object-fit: cover;
             border-radius: 10px;
-            margin: 10px;
+            margin-bottom: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .product h3 {
+            font-size: 1.2rem;
+            font-family: 'Noto Serif', serif;
+        }
+
+        /* Background Image Section */
+        section.image-section {
+            position: relative;
+            background-image: url('https://www.creativefabrica.com/wp-content/uploads/2020/05/28/Cinematic-Farm-Lightroom-Presets-Graphics-4222146-2-580x395.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        section.image-section h2 {
+            font-size: 2.5rem;
+            font-family: 'Teko', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        section.image-section p {
+            font-size: 1.3rem;
+            font-family: 'Noto Serif', serif;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
         }
 
         section.cta {
@@ -149,14 +202,43 @@
         </p>
     </section>
 
-    <!-- Image Gallery Section with 5 Square Images Side by Side -->
-    <div class="gallery-container">
-        <img src="https://assets.vogue.com/photos/5970ae55e1f2fe40edd9b4c0/master/pass/00-tout-tanks.jpg" alt="Model 1">
-        <img src="https://assets.vogue.com/photos/62cd9b0327f499360f987806/master/w_1600%2Cc_limit/VO0822_FOB_WhiteTank_01.jpg" alt="Model 2">
-        <img src="https://as2.ftcdn.net/v2/jpg/02/91/51/71/1000_F_291517198_sceUWtVyf3HGoMcDOzh51SQynrqYyfzh.jpg" alt="Model 3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTztu81yuqV_gfEulYX0X6tQf3VJTU0mTh1aA&s" alt="Model 4">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWoCWiIpIto0n0ye7iU9RmJAn0OyE_wN_0Ug&s" alt="Model 5">
-    </div>
+    <!-- Upcoming Products Section -->
+    <section class="products">
+        <h2>Our Upcoming Products</h2>
+        <div class="product-gallery">
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTztu81yuqV_gfEulYX0X6tQf3VJTU0mTh1aA&s" alt="The Classic Banyan">
+                <h3>The Classic Banyan</h3>
+            </div>
+            <div class="product">
+                <img src="https://litb-cgis.rightinthebox.com/desc_image/202306/bps/desc/inc/sdyelv1687851226856.jpg" alt="The Desi Dryfit">
+                <h3>The Desi Dryfit</h3>
+            </div>
+            <div class="product">
+                <img src="https://tiptopgents.com/wp-content/uploads/2022/04/img_626ba0aaa2d98.jpg" alt="The Leather Lassi">
+                <h3>The Leather Lassi</h3>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/7f/a3/03/7fa3031899d70b3274faf6b9cf86f1bd.jpg" alt="The Denim Dhokla">
+                <h3>The Denim Dhokla</h3>
+            </div>
+            <div class="product">
+                <img src="https://www.automicgold.com/cdn/shop/files/layered-chunky-solid-gold-chains_17.jpg?v=1722049930&width=1560" alt="Accessories">
+                <h3>Accessories</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Image Section -->
+    <section class="image-section">
+        <h2>The Shade of the Banyan Tree</h2>
+        <p>
+            The Banyan Tree is a strong tree native to South Asia. Our brand looks to use sustainable practices to bring handmade, premium luxury to your fingertips. 
+            Our team is actively engaging with the future of environmental retail production, and we pledge our services to keeping our planet healthy. <br><br>
+            The dream for Banyan Nation came from the desire to make a simple Indian clothing item the future of fitness and casual apparel. 
+            The Classic Banyan is our centerpiece, but we are preparing to launch a series of amazing products that complement it. Prepare for the adventure...
+        </p>
+    </section>
 
     <!-- Call to Action Section with Button -->
     <section class="cta">
