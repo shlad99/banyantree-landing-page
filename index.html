@@ -5,198 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Banyan Tree - Fashion Meets Fitness</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Teko:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Noto Serif', serif;
             background-color: #f4f4f9;
             color: #333;
         }
 
-        header {
-            background-color: #1f4037;
-            background-image: linear-gradient(315deg, #1f4037 0%, #99f2c8 74%);
-            padding: 20px 0;
-            text-align: center;
-            color: white;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-            font-family: 'Georgia', serif;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin: 10px 0;
-            font-weight: lighter;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 1rem;
-            font-weight: bold;
-        }
-
         section.hero {
-            background-image: url('https://source.unsplash.com/1600x900/?india,fitness');
+            background-image: url('https://t3.ftcdn.net/jpg/04/95/04/06/360_F_495040641_0pB8mxpZsAGc9z0t4LUfxnXE47sVeG0k.jpg');
             background-size: cover;
             background-position: center;
-            height: 90vh;
+            height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             color: white;
             padding: 20px;
+            margin: 0;
         }
 
-        section.hero h2 {
-            font-size: 3rem;
-            margin: 0;
-            text-shadow: 2px 2px 4px #000;
+        section.hero h1 {
+            font-size: 6rem; /* 50% bigger */
+            font-family: 'Teko', sans-serif;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section.hero h1 img {
+            width: 75px; /* 50% bigger */
+            height: 75px; /* 50% bigger */
+            margin-right: 15px;
         }
 
         section.hero p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin: 10px 0;
             text-shadow: 2px 2px 4px #000;
+            font-family: 'Noto Serif', serif;
         }
 
-        section.intro {
+        /* New Informational Section */
+        section.info {
             padding: 40px 20px;
+            background-color: #ffebcc; /* Light orange background */
             text-align: center;
         }
 
-        section.intro h2 {
-            font-size: 2rem;
-            color: #1f4037;
-        }
-
-        section.intro p {
-            font-size: 1.1rem;
+        section.info p {
+            font-size: 1.3rem;
+            font-family: 'Noto Serif', serif;
+            line-height: 1.8;
             max-width: 800px;
-            margin: 20px auto;
-            line-height: 1.6;
+            margin: 0 auto;
         }
 
-        section.products {
-            padding: 40px 20px;
+        .gallery-container {
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 40px 10px;
+            margin: 0 auto;
+            max-width: 1200px;
         }
 
-        .product {
-            background-color: white;
+        .gallery-container img {
+            width: 18%;
+            height: 250px;
+            object-fit: cover;
             border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            width: 300px;
             margin: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        .product img {
-            max-width: 100%;
-            border-radius: 10px;
+        section.cta {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #ffebcc; /* Light orange background */
+            color: black;
         }
 
-        .product h3 {
-            font-size: 1.5rem;
-            margin: 10px 0;
+        section.cta h2 {
+            font-size: 2rem;
+            font-family: 'Teko', sans-serif;
+            margin-bottom: 20px;
         }
 
-        .product p {
-            font-size: 1rem;
-            margin: 10px 0;
-        }
-
-        footer {
-            background-color: #1f4037;
+        .cta-button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
             color: white;
-            padding: 20px;
+            background-color: #ff6347;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ff4500;
+        }
+
+        /* Logo-only section */
+        section.logo-only {
+            background-color: #ffebcc; /* Light orange background */
+            padding: 60px;
             text-align: center;
         }
 
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
+        section.logo-only img {
+            width: 100px;
+            height: 100px;
         }
 
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Banyan Tree</h1>
-        <p>Where Indian Culture Meets Fitness</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
+    <!-- Hero Section with Seamless Header and Logo -->
     <section class="hero">
-        <div>
-            <h2>Fashion Inspired by Culture and Fitness</h2>
-            <p>Empower your body and soul with our unique collection</p>
-        </div>
+        <h1>
+            <img src="https://cdn-icons-png.flaticon.com/512/194/194461.png" alt="Banyan Tree Logo">
+            Banyan Tree
+        </h1>
+        <p>Fitness and Aesthetic with Desi Roots</p>
     </section>
 
-    <!-- Intro Section -->
-    <section class="intro" id="about">
-        <h2>About Banyan Tree</h2>
-        <p>Banyan Tree is a fashion brand blending traditional Indian aesthetics with modern fitness wear. Our vision is to
-            empower individuals who embrace both their cultural heritage and a healthy lifestyle. We bring the vibrancy and
-            beauty of India into contemporary designs that are perfect for fitness, yoga, and beyond.</p>
+    <!-- New Informational Section -->
+    <section class="info">
+        <p>
+            Banyan Tree is bringing the traditional banyan attire of India to the world. We are excited to bring forth a range of products and accessories that focus on comfort and culture. 
+            This is your home for outfits that can be worn year-round and in a variety of settings! The Banyan team is hard at work, so join our waitlist below to be the first to receive our products!
+        </p>
     </section>
 
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <div class="product">
-            <img src="https://source.unsplash.com/300x300/?yoga,clothing" alt="Yoga Clothing">
-            <h3>Yoga Collection</h3>
-            <p>Our Yoga line features breathable, flexible, and culturally inspired outfits.</p>
-        </div>
-        <div class="product">
-            <img src="https://source.unsplash.com/300x300/?fitness,wear" alt="Fitness Wear">
-            <h3>Fitness Apparel</h3>
-            <p>Performance-driven fitness wear that blends Indian patterns with cutting-edge materials.</p>
-        </div>
-        <div class="product">
-            <img src="https://source.unsplash.com/300x300/?india,clothing" alt="Cultural Designs">
-            <h3>Cultural Fusion</h3>
-            <p>Celebrate Indian traditions with our modern designs that reflect a fusion of old and new.</p>
-        </div>
+    <!-- Image Gallery Section with 5 Square Images Side by Side -->
+    <div class="gallery-container">
+        <img src="https://assets.vogue.com/photos/5970ae55e1f2fe40edd9b4c0/master/pass/00-tout-tanks.jpg" alt="Model 1">
+        <img src="https://assets.vogue.com/photos/62cd9b0327f499360f987806/master/w_1600%2Cc_limit/VO0822_FOB_WhiteTank_01.jpg" alt="Model 2">
+        <img src="https://as2.ftcdn.net/v2/jpg/02/91/51/71/1000_F_291517198_sceUWtVyf3HGoMcDOzh51SQynrqYyfzh.jpg" alt="Model 3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTztu81yuqV_gfEulYX0X6tQf3VJTU0mTh1aA&s" alt="Model 4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWoCWiIpIto0n0ye7iU9RmJAn0OyE_wN_0Ug&s" alt="Model 5">
+    </div>
+
+    <!-- Call to Action Section with Button -->
+    <section class="cta">
+        <h2>Join Our Waitlist!</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTdbx8tZ0C1Jd21zRV9-L_Dr_KkM8B9kbfqXN4jln_R1rf0g/viewform?usp=sf_link" class="cta-button">Join Now</a>
     </section>
 
-    <!-- Footer Section -->
-    <footer id="contact">
-        <p>&copy; 2024 Banyan Tree | <a href="mailto:info@banyantree.com">Contact Us</a></p>
-    </footer>
+    <!-- Logo-Only Section at the Bottom -->
+    <section class="logo-only">
+        <img src="https://cdn-icons-png.flaticon.com/512/194/194461.png" alt="Banyan Tree Logo">
+    </section>
 
 </body>
 </html>
